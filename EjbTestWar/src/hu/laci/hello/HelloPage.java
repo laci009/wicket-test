@@ -22,6 +22,11 @@ public class HelloPage extends WebPage {
 			message = superService.getStuff("woooHoooo");
 		}
 		add(new Label("message2", message));
+		
+		//New way:
+		new Thread(
+		    () -> System.out.println("Hello from thread")
+		).start();
 	}
 
 }
