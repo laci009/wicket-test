@@ -9,10 +9,10 @@ import javax.jms.MessageListener;
 /**
  * Message-Driven Bean implementation class for: SuperSender
  */
-@MessageDriven(
-		activationConfig = { @ActivationConfigProperty(
-				propertyName = "destinationType", propertyValue = "javax.jms.Queue")
-		})
+//@MessageDriven(
+//		activationConfig = { @ActivationConfigProperty(
+//				propertyName = "destinationType", propertyValue = "javax.jms.Queue")
+//		})
 public class SuperSender implements MessageListener {
 
     /**
